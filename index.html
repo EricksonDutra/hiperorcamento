@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="topo">
+            <h1>DESPACHANTE HIPER</h1>
+        </div>
+    </header>
+    
+    <aside>
+        <div class="container">
+            <div class="caixa">
+                <center><h3> ORÇAMENTOS</h3></center>
+                <form action="" method="get">
+                <table border="1">
+                    <tr>
+                        <th>Serviços</th>
+                        <th>Valor</th>
+                        <th>Selecione</th>
+                    </tr>
+                    <tr>
+                        <td>Transferência </td>
+                        <td>330,00R$</td>
+                        <td>
+                            <input type="checkbox" id="transfB">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vistoria </td>
+                        <td>200,00R$</td>
+                        <td>
+                            <input type="checkbox" id="vistB">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Inclusão de Gravame </td>
+                        <td>230,00R$</td>
+                        <td>
+                            <input type="checkbox" id="gravB">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Honorário </td>
+                        <td>120,00R$</td>
+                        <td>
+                            <input type="checkbox" id="honB" checked="true">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Outro: &nbsp;<input type="text" name="" id="outro"></td>
+                        <td><input type="" name="" id="v-outro"></td>
+                        <td>
+                            <input type="checkbox" id="outroB">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Desconto</td>
+                        <td><input type="number" name="" id="desc"></td><td>
+                            <input type="checkbox" id="descB">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+                <center>
+                    <p>
+                    <input type="button" id="btnSubmit" value="Submit me!" onclick="sub()" />
+                    <input type="button" id="btnLoad" value="Load!" />
+                </p>
+            </center>
+                <div class="soma">
+                    <center><h2>Total: </h2></center>
+                </div>
+            </div>
+
+        </div>
+    </aside>
+</body>
+<script src="main.js"></script>
+</html>
