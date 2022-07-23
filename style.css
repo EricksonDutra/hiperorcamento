@@ -73,10 +73,11 @@ input[type=button], input[type=submit], input[type=reset] {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 30px;
+    margin: 5px;
 }
 .butons{
-    margin-top: 5px;
-
+    margin-top: 7px;
 }
 .chec{
     top: 0;

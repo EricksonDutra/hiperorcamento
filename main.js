@@ -40,3 +40,8 @@ function sub(){
     result.innerHTML = `<center><h2> Total: ${total.toFixed(2)}</h2></center>`
     total = 0
 }
+
+function clean() {
+    total = 0
+    result.innerHTML = `<center><h2> Total: ${total.toFixed(2)}</h2></center>`
+}
