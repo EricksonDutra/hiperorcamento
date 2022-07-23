@@ -17,9 +17,9 @@
     <aside>
         <div class="container">
             <div class="caixa">
-                <center><h3> ORÇAMENTOS</h3></center>
+                <center><h2> ORÇAMENTOS</h2></center>
                 <form action="" method="get">
-                <table border="1">
+                <table>
                     <tr>
                         <th>Serviços</th>
                         <th>Valor</th>
@@ -29,48 +29,48 @@
                         <td>Transferência </td>
                         <td>330,00R$</td>
                         <td>
-                            <input type="checkbox" id="transfB">
+                            <input type="checkbox" id="transfB" class="chec">
                         </td>
                     </tr>
                     <tr>
                         <td>Vistoria </td>
                         <td>200,00R$</td>
                         <td>
-                            <input type="checkbox" id="vistB">
+                            <input type="checkbox" id="vistB" class="chec">
                         </td>
                     </tr>
                     <tr>
                         <td>Inclusão de Gravame </td>
                         <td>230,00R$</td>
                         <td>
-                            <input type="checkbox" id="gravB">
+                            <input type="checkbox" id="gravB" class="chec">
                         </td>
                     </tr>
                     <tr>
                         <td>Honorário </td>
                         <td>120,00R$</td>
                         <td>
-                            <input type="checkbox" id="honB" checked="true">
+                            <input type="checkbox" id="honB" checked="true" class="chec">
                         </td>
                     </tr>
                     <tr>
                         <td>Outro: &nbsp;<input type="text" name="" id="outro"></td>
-                        <td><input type="" name="" id="v-outro"></td>
+                        <td><input type="number" id="v-outro"></td>
                         <td>
-                            <input type="checkbox" id="outroB">
+                            <input type="checkbox" id="outroB" class="chec">
                         </td>
                     </tr>
                     <tr>
                         <td>Desconto</td>
                         <td><input type="number" name="" id="desc"></td><td>
-                            <input type="checkbox" id="descB">
+                            <input type="checkbox" id="descB" class="chec">
                         </td>
                     </tr>
                 </table>
             </form>
                 <center>
-                    <p>
-                    <input type="button" id="btnSubmit" value="Submit me!" onclick="sub()" />
+                    <p class="butons">
+                    <input type="button" id="btnSubmit" value="Calcular!" onclick="sub()" />
                     <input type="button" id="btnLoad" value="Load!" />
                 </p>
             </center>

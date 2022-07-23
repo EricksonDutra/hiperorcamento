@@ -12,11 +12,11 @@ var vistB = document.getElementById('vistB')
 var transfB = document.getElementById('transfB')
 var gravB = document.getElementById('gravB')
 var honB = document.getElementById('honB')
+let outroB = document.getElementById('outroB')
+let descB = document.getElementById('descB')
 
 function sub(){
     if(transfB.checked){
-        // console.log('valor verdadeiro')
-        // console.log(total)
         total = total + transf
     }
     if (vistB.checked){
@@ -28,9 +28,15 @@ function sub(){
     if (honB.checked){
         total = total + honorario
     }
+    if (outroB.checked){
+        let outrovalor = document.getElementById('v-outro').value
+        outrovalor = parseFloat(outrovalor)
+        total = total + outrovalor
+    }
+    if (descB.checked){
+        let desconto = document.getElementById('desc').value
+        total = total - desconto
+    }
     result.innerHTML = `<center><h2> Total: ${total.toFixed(2)}</h2></center>`
+    total = 0
 }
-result.innerHTML = 0
-// function soma (){
-//     return total
-// }
