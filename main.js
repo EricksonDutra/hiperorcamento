@@ -37,11 +37,11 @@ function sub(){
         let desconto = document.getElementById('desc').value
         total = total - desconto
     }
-    result.innerHTML = `<center><h2> Total: ${total.toFixed(2)}</h2></center>`
+    result.innerHTML = `<center><h2> Total: ${total.toFixed(2)}  R$</h2></center>`
     total = 0
 }
 
 function clean() {
     total = 0
-    result.innerHTML = `<center><h2> Total: ${total.toFixed(2)}</h2></center>`
+    result.innerHTML = `<center><h2> Total: ${total.toFixed(2)} R$</h2></center>`
 }

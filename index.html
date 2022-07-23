@@ -11,74 +11,73 @@
     <header>
         <div class="topo">
             <h1>DESPACHANTE HIPER</h1>
+            <img src="https://raw.githubusercontent.com/EricksonDutra/hiper/main/HD.jpeg?token=GHSAT0AAAAAABQN5B5VYSS7HL7MLI4VQOZMYW4ML6A" alt="logo" srcset="" class="logo">
         </div>
     </header>
     
     <aside>
         <div class="container">
             <div class="caixa">
-                <center><h2> ORÇAMENTOS</h2></center>
-                <form action="" method="get">
+                <h2> ORÇAMENTOS</h2>
+                <br>
                 <table>
                     <tr>
-                        <th>Serviços</th>
-                        <th>Valor</th>
-                        <th>Selecione</th>
+                        <th class="c">Serviços</th>
+                        <th class="c">Valor</th>
+                        <th class="c">Selecione</th>
                     </tr>
                     <tr>
                         <td>Transferência </td>
-                        <td>330,00R$</td>
-                        <td>
+                        <td class="c">330,00R$</td>
+                        <td class="c">
                             <input type="checkbox" id="transfB" class="chec">
                         </td>
                     </tr>
                     <tr>
                         <td>Vistoria </td>
-                        <td>200,00R$</td>
-                        <td>
+                        <td class="c">200,00R$</td>
+                        <td class="c">
                             <input type="checkbox" id="vistB" class="chec">
                         </td>
                     </tr>
                     <tr>
                         <td>Inclusão de Gravame </td>
-                        <td>230,00R$</td>
-                        <td>
+                        <td class="c">230,00R$</td>
+                        <td class="c">
                             <input type="checkbox" id="gravB" class="chec">
                         </td>
                     </tr>
                     <tr>
                         <td>Honorário </td>
-                        <td>120,00R$</td>
-                        <td>
+                        <td class="c">120,00R$</td>
+                        <td class="c">
                             <input type="checkbox" id="honB" checked="true" class="chec">
                         </td>
                     </tr>
                     <tr>
                         <td>Outro: &nbsp;<input type="text" name="" id="outro"></td>
-                        <td><input type="number" id="v-outro"></td>
-                        <td>
+                        <td class="c"><input type="number" id="v-outro"></td>
+                        <td class="c">
                             <input type="checkbox" id="outroB" class="chec">
                         </td>
                     </tr>
                     <tr>
                         <td>Desconto</td>
-                        <td><input type="number" name="" id="desc"></td><td>
-                            <input type="checkbox" id="descB" class="chec">
+                        <td class="c"><input type="number" name="" id="desc"></td>
+                        <td class="c">
+                            <input type="checkbox" id="descB" class="chec" >
                         </td>
                     </tr>
                 </table>
-            </form>
-                <center>
-                    <p class="butons">
+                
+                <p class="butons">
                     <input type="button" id="btnSubmit" value="Calcular!" onclick="sub()" />
                     <input type="button" id="btnLoad" value="Limpar!" onclick="clean()" />
                 </p>
-            </center>
                 <div class="soma">
-                    <center><h2>Total: </h2></center>
+                    <h2>Total: </h2>
                 </div>
             </div>
-
         </div>
     </aside>
 </body>
