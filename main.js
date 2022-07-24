@@ -2,6 +2,7 @@ const transf = 330.00
 const vistoria = 200.00
 const grav = 230.00
 const honorario = 120.00
+const despesa = 50.00
 let total = 0.0
 
 result = document.querySelector('.soma')
@@ -27,6 +28,9 @@ function sub(){
     }
     if (honB.checked){
         total = total + honorario
+    }
+    if (despesaB.checked){
+        total = total + despesa
     }
     if (outroB.checked){
         let outrovalor = document.getElementById('v-outro').value
