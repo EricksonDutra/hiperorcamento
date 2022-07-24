@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style copy.css">
 </head>
 <body>
     <header>
@@ -20,55 +21,58 @@
             <div class="caixa">
                 <h2> ORÇAMENTOS</h2>
                 <br>
-                <table>
-                    <tr>
-                        <th class="c">Serviços</th>
-                        <th class="c">Valor</th>
-                        <th class="c">Selecione</th>
-                    </tr>
-                    <tr>
-                        <td>Transferência </td>
-                        <td class="c">330,00R$</td>
-                        <td class="c">
-                            <input type="checkbox" id="transfB" class="chec">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Vistoria </td>
-                        <td class="c">200,00R$</td>
-                        <td class="c">
-                            <input type="checkbox" id="vistB" class="chec">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Inclusão de Gravame </td>
-                        <td class="c">230,00R$</td>
-                        <td class="c">
-                            <input type="checkbox" id="gravB" class="chec">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Honorário </td>
-                        <td class="c">120,00R$</td>
-                        <td class="c">
-                            <input type="checkbox" id="honB" checked="true" class="chec">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Outro: &nbsp;<input type="text" name="" id="outro"></td>
-                        <td class="c"><input type="number" id="v-outro"></td>
-                        <td class="c">
-                            <input type="checkbox" id="outroB" class="chec">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Desconto</td>
-                        <td class="c"><input type="number" name="" id="desc"></td>
-                        <td class="c">
-                            <input type="checkbox" id="descB" class="chec" >
-                        </td>
-                    </tr>
-                </table>
+                <div class="bd-example">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col" class="c">Serviços</th>
+                            <th scope="col" class="c">Valor</th>
+                            <th scope="col" class="c">Selecione</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Transferência</td>
+                            <td class="c">330,00R$</td>
+                            <td class="c"><input type="checkbox" id="transfB" class="chec"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Vistoria</td>
+                            <td class="c">200,00R$</td>
+                            <td class="c"><input type="checkbox" id="vistB" class="chec"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Inclusão de Gravame</td>
+                            <td class="c">230,00R$</td>
+                            <td class="c"><input type="checkbox" id="gravB" class="chec"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Honorário</td>
+                            <td class="c">120,00R$</td>
+                            <td class="c"><input type="checkbox" id="honB" checked="true" class="chec"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Outro <input type="text" name="" id="outro"></td>
+                            <td class="c"><input type="number" id="v-outro"></td>
+                            <td class="c"><input type="checkbox" id="outroB" class="chec"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Desconto</td>
+                            <td class="c"><input type="number" name="" id="desc"></td>
+                            <td class="c"><input type="checkbox" id="descB" class="chec" ></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 
                 <p class="butons">
                     <input type="button" id="btnSubmit" value="Calcular!" onclick="sub()" />

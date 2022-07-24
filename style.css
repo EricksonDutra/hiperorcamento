@@ -4,30 +4,10 @@
     box-sizing: border-box;
 }
 
-h1,h2,h3{
-    font-family: 'Roboto';
-}
-
-td{
-    font-family: 'Roboto';
+td,th,thead{
     font-size: 20px;
-    font-weight: 400;
 }
 
-th{
-    font-size: 20px;
-    font-family: 'Roboto';
-    font-weight: bold;
-}
-
-td{
-    text-align: start;
-    border: collapse;
-    margin-top: 25px;
-    border-top: 1px solid black;
-    margin: 200px;
-    padding: 3px
-}
 .logo{
     position: fixed;
     top: 0;
@@ -54,14 +34,11 @@ body{
     height: 100vh;
 }
 
-.c{
-    text-align: center;
-}
-
 .caixa h2{
     display: block;
     text-align: center;
 }
+
 .container{
     display: flex;
     flex-direction: column;
@@ -72,17 +49,12 @@ body{
 .container .caixa{
     margin-top: 50px;
     background-color: #daf3ea;
-    width: 600px;
+    width: 720px;
     height: auto;
     border-radius: 70px;
     padding: 20px;
     box-shadow: -10px 15px 5px rgba(47, 45, 45, 0.697);
     overflow: visible;
-}
-
-.container table{
-    display: flex;
-    justify-content: center;
 }
 
 .soma{
@@ -118,4 +90,9 @@ input[type=button], input[type=submit] {
 .chec {
     height: 17px;
     width: 17px;
+}
+
+/* adaptando bootstrap */
+.c{
+    text-align: center;
 }

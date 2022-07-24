@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="topo">
+            <h1>DESPACHANTE HIPER</h1>
+            <img src="./HD.jpeg" alt="logo" srcset="" class="logo">
+        </div>
+    </header>
+    
+    <aside>
+        <div class="container">
+            <div class="caixa">
+                <h2> ORÇAMENTOS</h2>
+                <br>
+                <table>
+                    <tr>
+                        <th class="c">Serviços</th>
+                        <th class="c">Valor</th>
+                        <th class="c">Selecione</th>
+                    </tr>
+                    <tr>
+                        <td>Transferência </td>
+                        <td class="c">330,00R$</td>
+                        <td class="c">
+                            <input type="checkbox" id="transfB" class="chec">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vistoria </td>
+                        <td class="c">200,00R$</td>
+                        <td class="c">
+                            <input type="checkbox" id="vistB" class="chec">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Inclusão de Gravame </td>
+                        <td class="c">230,00R$</td>
+                        <td class="c">
+                            <input type="checkbox" id="gravB" class="chec">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Honorário </td>
+                        <td class="c">120,00R$</td>
+                        <td class="c">
+                            <input type="checkbox" id="honB" checked="true" class="chec">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Outro: &nbsp;<input type="text" name="" id="outro"></td>
+                        <td class="c"><input type="number" id="v-outro"></td>
+                        <td class="c">
+                            <input type="checkbox" id="outroB" class="chec">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Desconto</td>
+                        <td class="c"><input type="number" name="" id="desc"></td>
+                        <td class="c">
+                            <input type="checkbox" id="descB" class="chec" >
+                        </td>
+                    </tr>
+                </table>
+                
+                <p class="butons">
+                    <input type="button" id="btnSubmit" value="Calcular!" onclick="sub()" />
+                    <input type="button" id="btnLoad" value="Limpar!" onclick="clean()" />
+                </p>
+                <div class="soma">
+                    <h2>Total: </h2>
+                </div>
+            </div>
+        </div>
+    </aside>
+</body>
+<script src="main.js"></script>
+</html>
