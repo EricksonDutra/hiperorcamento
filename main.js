@@ -1,8 +1,9 @@
 const transf = 330.00
 const vistoria = 200.00
-const grav = 230.00
+const grav = 235.00
 const honorario = 120.00
 const despesa = 50.00
+const placa = 200.00
 let total = 0.0
 
 result = document.querySelector('.soma')
@@ -15,6 +16,7 @@ var gravB = document.getElementById('gravB')
 var honB = document.getElementById('honB')
 let outroB = document.getElementById('outroB')
 let descB = document.getElementById('descB')
+let placaB = document.getElementById('placaB')
 
 function sub(){
     if(transfB.checked){
@@ -31,6 +33,9 @@ function sub(){
     }
     if (despesaB.checked){
         total = total + despesa
+    }  
+    if (placaB.checked){
+        total = total + placa
     }
     if (outroB.checked){
         let outrovalor = document.getElementById('v-outro').value

@@ -5,24 +5,24 @@
 }
 
 td,th,thead{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .logo{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 5rem;
+    width: 4rem;
     float: left;
     margin: 15px 5px;
 }
 .topo{
     width: 100vw;
-    height: 100px;
+    height: 80px;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     text-align: center;
-    padding-top: 25px;
+    padding-top: 20px;
 }
 .topo h1{
     justify-content: center;
@@ -64,6 +64,9 @@ body{
 input[type=text] {
     border: none;
     background-color: rgba(208, 208, 243, 0.845);
+}
+input:hover {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 input{
     background-color: rgba(208, 208, 243, 0.727);
